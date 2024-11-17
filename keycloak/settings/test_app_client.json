@@ -1,0 +1,129 @@
+{
+  "clientId": "test_app_client_copy",
+  "name": "",
+  "description": "",
+  "rootUrl": "https://localhost:4001",
+  "adminUrl": "https://localhost:4001/",
+  "baseUrl": "https://localhost:4001",
+  "surrogateAuthRequired": false,
+  "enabled": true,
+  "alwaysDisplayInConsole": false,
+  "clientAuthenticatorType": "client-jwt",
+  "secret": "y2008ReUCDxunVZnnryHz1P0Nz8I1qMA",
+  "redirectUris": [
+    "https://localhost:4001/api/authRedirect"
+  ],
+  "webOrigins": [
+    ""
+  ],
+  "notBefore": 0,
+  "bearerOnly": false,
+  "consentRequired": true,
+  "standardFlowEnabled": true,
+  "implicitFlowEnabled": false,
+  "directAccessGrantsEnabled": false,
+  "serviceAccountsEnabled": true,
+  "publicClient": false,
+  "frontchannelLogout": true,
+  "protocol": "openid-connect",
+  "attributes": {
+    "request.object.signature.alg": "PS256",
+    "token.endpoint.auth.signing.alg": "PS256",
+    "oauth2.device.authorization.grant.enabled": "false",
+    "use.jwks.url": "false",
+    "backchannel.logout.revoke.offline.tokens": "false",
+    "use.refresh.tokens": "true",
+    "jwt.credential.certificate": "MIICrTCCAZUCBgGTMQxaGzANBgkqhkiG9w0BAQsFADAaMRgwFgYDVQQDDA90ZXN0X2FwcF9jbGllbnQwHhcNMjQxMTE1MTgxNjUzWhcNMzQxMTE1MTgxODMzWjAaMRgwFgYDVQQDDA90ZXN0X2FwcF9jbGllbnQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDpbkzofGKT+I6NyGAtgb9452Phi92BRNCyMuqf+esRsU6fnSEABLcPTYC+CB1UNCN0we2pvXFKLI+Hjrf21KK1FN1oxf+Ulbrs0egPUZKfJi7giUi88OORVVnAeNeURgpRndosdJqJcwp8hmTYzQ3V+8ARiSEvultEnzWHeFuAW7S6XGTqKKTECuThR5Iv+exYUNpKcvfHFbL2l73PofzSPCKcMMsJx5lYKvSUA2VwB8gk7RS6pJoHeWUCDHl3ueKRHopCX9CmWWta5alKeeZzlzCM/V3IhqndANgusF1MJjSjRIVzr2Y+tb68R2DnoWu5bQoUaChUqPLIkYqCW3WBAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAIEVLO2K4KuzqdUxTrfQ1U55YF2EnP31ukrTQBLdG642v0FWDJEhuJJiCf4YdvAE//szdBVSWVy1HL9KFllvYucvqPJ5y/ZhYbo1sOf+8XmWAQkMekTGDDyeNHjwYdDbpi32J1NyHnreG3Sd/OeVfuoNBcAQ6YAwRM/lXV5urEOfpYt8Wh28kcUfGPwvH7cHn/WB2QgaWZt/h8stspuaCs3iyCbe372HiSjCzpqdKr5zXCX3WHY/gqU8kgEGIpNppQ2toETsG2YvB7msxQW7PTLcy0xIYWcbuhr0C4RNHJER/Sqi9uQA9x2qRPOkHhFigpLznSwkBFi9dmiuyOK/bJQ=",
+    "realm_client": "false",
+    "oidc.ciba.grant.enabled": "false",
+    "exclude.issuer.from.auth.response": "false",
+    "id.token.signed.response.alg": "PS256",
+    "backchannel.logout.session.required": "true",
+    "backchannel.logout.url": "https://localhost:4001",
+    "client_credentials.use_refresh_token": "false",
+    "require.pushed.authorization.requests": "true",
+    "pkce.code.challenge.method": "S256",
+    "dpop.bound.access.tokens": "true",
+    "client.secret.creation.time": "1731426227",
+    "client.introspection.response.allow.jwt.claim.enabled": "false",
+    "access.token.signed.response.alg": "PS256",
+    "exclude.session.state.from.auth.response": "true",
+    "client.use.lightweight.access.token.enabled": "false",
+    "acr.loa.map": "{}",
+    "tls.client.certificate.bound.access.tokens": "false",
+    "display.on.consent.screen": "false",
+    "authorization.signed.response.alg": "PS256",
+    "token.response.type.bearer.lower-case": "false",
+    "login_theme": "",
+    "consent.screen.text": "",
+    "frontchannel.logout.url": ""
+  },
+  "authenticationFlowBindingOverrides": {},
+  "fullScopeAllowed": false,
+  "nodeReRegistrationTimeout": -1,
+  "protocolMappers": [
+    {
+      "name": "Client Host",
+      "protocol": "openid-connect",
+      "protocolMapper": "oidc-usersessionmodel-note-mapper",
+      "consentRequired": false,
+      "config": {
+        "user.session.note": "clientHost",
+        "id.token.claim": "true",
+        "introspection.token.claim": "true",
+        "access.token.claim": "true",
+        "claim.name": "clientHost",
+        "jsonType.label": "String"
+      }
+    },
+    {
+      "name": "Client IP Address",
+      "protocol": "openid-connect",
+      "protocolMapper": "oidc-usersessionmodel-note-mapper",
+      "consentRequired": false,
+      "config": {
+        "user.session.note": "clientAddress",
+        "id.token.claim": "true",
+        "introspection.token.claim": "true",
+        "access.token.claim": "true",
+        "claim.name": "clientAddress",
+        "jsonType.label": "String"
+      }
+    },
+    {
+      "name": "Client ID",
+      "protocol": "openid-connect",
+      "protocolMapper": "oidc-usersessionmodel-note-mapper",
+      "consentRequired": false,
+      "config": {
+        "user.session.note": "client_id",
+        "id.token.claim": "true",
+        "introspection.token.claim": "true",
+        "access.token.claim": "true",
+        "claim.name": "client_id",
+        "jsonType.label": "String"
+      }
+    }
+  ],
+  "defaultClientScopes": [
+    "web-origins",
+    "acr",
+    "roles",
+    "profile",
+    "basic",
+    "email"
+  ],
+  "optionalClientScopes": [
+    "address",
+    "phone",
+    "offline_access",
+    "organization",
+    "microprofile-jwt"
+  ],
+  "access": {
+    "view": true,
+    "configure": true,
+    "manage": true
+  },
+  "authorizationServicesEnabled": false
+}
