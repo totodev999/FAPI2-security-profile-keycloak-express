@@ -74,7 +74,9 @@ export async function performPAR({
     const response = await axios.post(parEndpoint, params.toString(), {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        DPoP: dpopProof, // include DPoP header
+        // include DPoP header. Maybe, DPoP is not necessary for PAR.
+        // But, KeyCloak requires DPoP header.
+        DPoP: dpopProof,
       },
     });
 
